@@ -1,0 +1,20 @@
+# division-using-subtraction
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc =new Scanner(System.in);
+		System.out.println("Enter the Numerator value:");
+		int valueOfNumerator=sc.nextInt();
+		System.out.println("Enter the Denominator value:");
+		int valueOfDenominator=sc.nextInt();
+		int quotient=0;
+		while(valueOfNumerator>=valueOfDenominator)
+		{
+		    valueOfNumerator=valueOfNumerator-valueOfDenominator;
+		    quotient++;
+		}
+		System.out.println("The quotient is "+quotient);
+		
+	}
+}
